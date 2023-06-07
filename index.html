@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="main.css">
+    <title>Quiz</title>
+</head>
+
+<body>
+
+    <section class="quiz" id="quiz">
+        <div class="quiz__inner">
+            <div class="quiz__title">
+                <h2>
+                    Name That Thing: Food
+                </h2>
+            </div>
+            <div class="quiz__block" id="quiz__block">
+                <div class="quiz__block-left">
+                    <div class="quiz__indicator">Question <span id="indicator">0</span></div>
+                    <div class="quiz__questions" id="questions"></div>
+                </div>
+                <div class="quiz__block-right">
+                    <div class="quiz__block-title">
+                        <h2>
+                            Choose the correct option:
+                        </h2>
+                    </div>
+                    <ul class="quiz__block-answers" id="answers"></ul>
+                    <div class="quiz__button">
+                        <button class="btn btn-next" id="btn-next" disabled>Next</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quiz__results">
+                <div class="quiz__results-wrapper" id="results"></div>
+                <div class="quiz__button">
+                    <button class="btn btn-restart" id="btn-restart">Restart</button>
+                </div>
+            </div>
+
+            <div class="quiz__user">
+                <div class="quiz__user-avatar">
+                    <img src="img/avatar.png" alt="">
+                </div>
+                <div class="quiz__user-name">
+                    HI! User
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
